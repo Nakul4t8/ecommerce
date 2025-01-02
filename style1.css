@@ -1,0 +1,81 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.profile-header {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.profile-email {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Details Section */
+.profile-details {
+    margin-top: 20px;
+}
+
+.profile-details h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+}
+
+.profile-details p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.profile-details ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+}
+
+.profile-details li {
+    margin: 5px 0;
+}
+
+.profile-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.profile-details a:hover {
+    text-decoration: underline;
+}

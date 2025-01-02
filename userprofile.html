@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Profile Header Section -->
+        <div class="profile-header">
+            <img id="profile-image" src="default-profile.jpg" alt="User Picture" class="profile-image">
+            <div class="profile-info">
+                <h1 id="display-username">John Doe</h1>
+                <p id="display-email" class="profile-email">johndoe@example.com</p>
+            </div>
+        </div>
+
+        <!-- Profile Details Section -->
+        <div class="profile-details">
+            <h2>Personal Information</h2>
+            <div class="detail-item">
+                <span class="detail-title">Phone:</span>
+                <span id="display-phone" class="detail-value">+1 234 567 890</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-title">Address:</span>
+                <span id="display-address" class="detail-value">123 Main Street, Cityville, USA</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

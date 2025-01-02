@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Settings</title>
+    <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h1>User Settings</h1>
+        <p class="settings-description">
+            Customize your personal information below. Changes will reflect on your profile immediately.
+        </p>
+
+        <form id="settings-form" class="settings-form">
+            <!-- Update Profile Picture -->
+            <div class="form-group">
+                <label for="profile-picture"><i class="icon">📸</i> Profile Picture</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+                <img id="preview-image" src="default-profile.jpg" alt="Profile Picture Preview" class="profile-preview">
+            </div>
+
+            <!-- Change Username -->
+            <div class="form-group">
+                <label for="username"><i class="icon">👤</i> Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter new username" required>
+            </div>
+
+            <!-- Change Email -->
+            <div class="form-group">
+                <label for="email"><i class="icon">📧</i> Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter new email" required>
+            </div>
+
+            <!-- Change Phone Number -->
+            <div class="form-group">
+                <label for="phone"><i class="icon">📞</i> Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter new phone number" required>
+            </div>
+
+            <!-- Change Address -->
+            <div class="form-group">
+                <label for="address"><i class="icon">🏠</i> Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter new address" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="button" id="save-button">Save Changes</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

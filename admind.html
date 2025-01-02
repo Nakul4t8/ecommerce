@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admind.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Admin Panel</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="admind.html">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Reports</a></li>
+            <!-- Update the Settings link to point to admin-settings.html -->
+            <li><a href="admin-settings.html">Settings</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <div class="header-info">
+                <span>Welcome, Admin</span>
+            </div>
+        </header>
+
+        <section class="dashboard-stats">
+            <div class="stat-box">
+                <h3>Total Users</h3>
+                <p>1,200</p>
+            </div>
+            <div class="stat-box">
+                <h3>Total Orders</h3>
+                <p>3,450</p>
+            </div>
+            <div class="stat-box">
+                <h3>Total Products</h3>
+                <p>560</p>
+            </div>
+            <div class="stat-box">
+                <h3>Total Revenue</h3>
+                <p>$12,340</p>
+            </div>
+        </section>
+
+        <section class="recent-activity">
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>User John Doe registered.</li>
+                <li>Order #1002 completed.</li>
+                <li>New product added: "Smart Watch".</li>
+                <li>User Jane Smith updated profile.</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="admind.js"></script>
+</body>
+</html>

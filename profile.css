@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
+
+/* Profile Header Section */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+.profile-info .profile-email {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Profile Details Section */
+.profile-details h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+}
+
+.detail-title {
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.detail-value {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .profile-info h1 {
+        font-size: 24px;
+    }
+
+    .profile-info .profile-email {
+        font-size: 14px;
+    }
+
+    .profile-details h2 {
+        font-size: 20px;
+    }
+
+    .detail-title {
+        font-size: 14px;
+    }
+
+    .detail-value {
+        font-size: 14px;
+    }
+}

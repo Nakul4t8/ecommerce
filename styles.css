@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background.jpeg') no-repeat center center fixed; /* Add tech background image for body */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    color: #333;
+    min-height: 100vh; /* Ensure body takes full height of the screen */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for the navbar */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Side Navigation Bar */
+.side-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.side-nav ul {
+    list-style: none;
+}
+
+.side-nav ul li {
+    margin: 20px 0;
+}
+
+.side-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.side-nav ul li a:hover {
+    color: #ff6347; /* Hover effect for side nav links */
+}
+
+/* Content */
+.content {
+    margin-left: 270px; /* Adjust content to the right to avoid overlap with the side-nav */
+    padding: 50px;
+    text-align: center;
+    background: url('tecbackground.jpeg') no-repeat center center fixed; /* Add tech background image */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    color: white; /* White text to contrast against the dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow to the content area */
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #ddd; /* Lighter color for the paragraph text */
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px;
+    margin: 20px 0;
+    justify-items: center;
+}
+
+.product {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    max-width: 100%; /* Ensure images fit within the container */
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}

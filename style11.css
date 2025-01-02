@@ -1,0 +1,168 @@
+/* Settings Container */
+.settings-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.settings-container h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.settings-description {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Form Styling */
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group .icon {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+.settings-form input,
+.settings-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.settings-form input:focus,
+.settings-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Buttons */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-actions button {
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-actions #save-button {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.form-actions #save-button:hover {
+    background-color: #0056b3;
+}
+
+.reset-button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.reset-button:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* User Profile Styling */
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.user-profile h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.user-profile p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* User Info Labels */
+.user-profile .info-label {
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 8px;
+}
+
+.user-profile .info-text {
+    color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+
+    .user-profile {
+        padding: 20px;
+    }
+
+    .user-profile img {
+        width: 100px;
+        height: 100px;
+    }
+}

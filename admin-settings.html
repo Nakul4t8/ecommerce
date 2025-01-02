@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Settings</title>
+    <link rel="stylesheet" href="adminds.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Admin Panel</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="admind.html">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="admin-settings.html">Settings</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <div class="header-info">
+                <span>Admin Settings</span>
+            </div>
+        </header>
+
+        <!-- Settings Form -->
+        <section class="settings-form">
+            <h2>Profile Information</h2>
+            <form>
+                <div class="form-group">
+                    <label for="admin-name">Admin Name:</label>
+                    <input type="text" id="admin-name" name="admin-name" placeholder="Enter admin name">
+                </div>
+                <div class="form-group">
+                    <label for="admin-email">Admin Email:</label>
+                    <input type="email" id="admin-email" name="admin-email" placeholder="Enter admin email">
+                </div>
+                <div class="form-group">
+                    <label for="admin-password">Password:</label>
+                    <input type="password" id="admin-password" name="admin-password" placeholder="Enter new password">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="save-button">Save Changes</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Theme Settings -->
+        <section class="theme-settings">
+            <h2>Theme Settings</h2>
+            <form>
+                <div class="form-group">
+                    <label for="theme-color">Theme Color:</label>
+                    <select id="theme-color" name="theme-color">
+                        <option value="default">Default</option>
+                        <option value="dark">Dark Mode</option>
+                        <option value="light">Light Mode</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="save-button">Save Theme</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Site Settings -->
+        <section class="site-settings">
+            <h2>Site Settings</h2>
+            <form>
+                <div class="form-group">
+                    <label for="site-title">Site Title:</label>
+                    <input type="text" id="site-title" name="site-title" placeholder="Enter site title">
+                </div>
+                <div class="form-group">
+                    <label for="site-description">Site Description:</label>
+                    <textarea id="site-description" name="site-description" rows="3" placeholder="Enter site description"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="save-button">Save Site Settings</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="admind.js"></script>
+</body>
+</html>

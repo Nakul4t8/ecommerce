@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li> <!-- Link to contact.html -->
+        </ul>
+    </nav>
+
+    <!-- Side Navigation Bar -->
+    <div class="side-nav">
+        <ul>
+            <li>
+                <a href="#user" id="user-toggle">User</a>
+                <ul class="toggle-content" id="user-content">
+                    <!-- Link to the User Profile Page -->
+                    <li><a href="userprofile.html" target="_self">User Profile</a></li>
+                    <li><a href="setting.html" target="_self">User Settings</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#admin" id="admin-toggle">Admin</a>
+                <ul class="toggle-content" id="admin-content">
+                    <!-- Link to the Admin Dashboard Page -->
+                    <li><a href="admind.html" target="_self">Admin Dashboard</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to the website</h1>
+        <p>This is the content area where information will be displayed.</p>
+    </div>
+
+    <script src="scripts.js"></script>
+
+<div class="content">
+    <h1>Tech Products</h1>
+    <p>Explore our latest tech products!</p>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product">
+            <a href="https://www.bing.com/aclk?ld=e8UADo8NL5ELVRzDP9UFpS2jVUCUyYtzTiAL-0OI-PUjroaNVbhCdHT8jUo1-7hSPj91DcmMPLFKD_PA1fB2MtJ4LCWJHYpTFCsOg5ygM6xoNMAZIEmveFqY4Er4okhdULRFuEpDlYD0W8DFCPoHp6XebCEcbEWi3gZhxAaVaqSldcUcjMS5hl60hJCSwPAl_xYCMQ7g&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmluJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkbGFwdG9wJTI2aW5kZXglM2RhcHMlMjZ0YWclM2Rtc25kZXNrc3RkaW4tMjElMjZyZWYlM2RwZF9zbF82YWdmczVwcXFqX2UlMjZhZGdycGlkJTNkMTMyNDkxMzE2ODg3NDI1MSUyNmh2YWRpZCUzZDgyODA3MzQwODcwMDU5JTI2aHZuZXR3JTNkbyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYmUlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkMTU1OTg1JTI2aHZ0YXJnaWQlM2Rrd2QtODI4MDgwMDkyNTYxNjElM2Fsb2MtOTAlMjZoeWRhZGNyJTNkMzc4OF8yMzk4Njk4JTI2bWNpZCUzZA&rlid=d2a686d3805218587b8de1bef3935877&ntb=1" target="_blank">
+                <img src="laptop.jpeg" alt="Tech Product 1">
+            </a>
+            <h3>Product 1 - $199</h3>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <a href="https://www.bing.com/aclk?ld=e8P1sgqkz1-KqE1S8rfKzlAjVUCUyuVKCvompMDig6pjSNIV--TnrF4v5uJMkXApFXlcYh6QeOxzJNntH4VBEkhj0Mwdlj7Rhdm-_ly2_hR_b_Tp1MX00BuuOjyYuyO5UODezs4xj47L9bFJ5fmBGyOOUhd9_G2-jGCsrlZ7XnmkxHKH58mWC68flZBzYygOoh0-l1pg&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmluJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkaGVhZHBob25lcyUyNmluZGV4JTNkYXBzJTI2dGFnJTNkbXNuZGVza3N0ZGluLTIxJTI2cmVmJTNkcGRfc2xfM3M3YjdsNmo3eV9lJTI2YWRncnBpZCUzZDEzMjcxMTIxNDQ2NDE4NjklMjZodmFkaWQlM2Q4Mjk0NDc2NzcwNDIwNiUyNmh2bmV0dyUzZG8lMjZodnFtdCUzZGUlMjZodmJtdCUzZGJlJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDE1NTk4NSUyNmh2dGFyZ2lkJTNka3dkLTgyOTQ1NDQwOTQyMzI3JTNhbG9jLTkwJTI2aHlkYWRjciUzZDcyODRfMjE0Njg4OSUyNm1jaWQlM2QlMjZtc2Nsa2lkJTNkZjgzNmJiMzM0NTM0MTExNDViZmNkYzVlMzZjNmY0NTE&rlid=f836bb33453411145bfcdc5e36c6f451&ntb=1" target="_blank">
+                <img src="headphone.webp" alt="Tech Product 2">
+            </a>
+            <h3>Product 2 - $299</h3>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <a href="https://www.bing.com/aclk?ld=e8fpA3xGajjyIkSo7B8GfBVDVUCUx5otoq-mR7_OrfRnm_qcRzL2n0jA1KOxB0R5NF8yetTIu1AZOJJJLhgbi826Oi7RArXQF17yuV0wO6yBme3XfwQVWlhHRD17-IJFN3lXqfGXMJzPmYdl-LzOyoP4ahk-9b3UhtgbnJ-jCyZwFrneSKPn8WjAu4zxTAvTAEtNCKqA&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmluJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkc21hcnRwaG9uZXMlMjZpbmRleCUzZGFwcyUyNnRhZyUzZG1zbmRlc2tzdGRpbi0yMSUyNnJlZiUzZHBkX3NsXzY3ZGNmZ3M2ZmtfZSUyNmFkZ3JwaWQlM2QxMzI2MDEyNjMyNDc5NjkyJTI2aHZhZGlkJTNkODI4NzYwNDc1NDAwMzElMjZodm5ldHclM2RvJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RiZSUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2QxNTU5ODUlMjZodnRhcmdpZCUzZGt3ZC04Mjg3NjY3OTkxODcxMiUzYWxvYy05MCUyNmh5ZGFkY3IlM2QyMjEwNF8xOTg4NDc0JTI2bWNpZCUzZA&rlid=7f3d8d3f9ea019e6fe52ea52ea88b12b&ntb=1" target="_blank">
+                <img src="mobile.jpeg" alt="Tech Product 3">
+            </a>
+            <h3>Product 3 - $399</h3>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <a href="https://www.bing.com/aclk?ld=e8GwcAZsjrlsmFGizuOvSThTVUCUwF_rHH6OS1t-Rhi5lbQ0rinvQ35FV0pOcerhcxOtBSwPwpGe2n8c6gtAlrN3CvbKHjAO4G3VzouZiHj8HheeVkN7R2b6Ep9VDaIcbGTkYzFaj13A4QfvDhhU_K9yJp3N3OnEfzP7TT9F-folWFKa4slx-lOh8eZ_jlr2F03mieMQ&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmluJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkd2lyZWQlMmJoZWFkcGhvbmVzJTI2aW5kZXglM2RhcHMlMjZ0YWclM2Rtc25kZXNrc3RkaW4tMjElMjZyZWYlM2RwZF9zbF90dzlvbTczaGFfZSUyNmFkZ3JwaWQlM2QxMzI2MDEyNjgxMzUyNjUyJTI2aHZhZGlkJTNkODI4NzYwNTk2MTI1MTYlMjZodm5ldHclM2RvJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RiZSUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2QxNTU5ODUlMjZodnRhcmdpZCUzZGt3ZC04Mjg3NjczMzYxMzI4MCUzYWxvYy05MCUyNmh5ZGFkY3IlM2QxOTkzNl8yMzM3OTYzJTI2bWNpZCUzZCUyNm1zY2xraWQlM2QyYzU1YzFmYTM0NzgxOTE1YjRhOWE2OTc0MDM3MjQ2Yg&rlid=2c55c1fa34781915b4a9a6974037246b&ntb=1" target="_blank">
+                <img src="wireheadphone.jpeg" alt="Tech Product 4">
+            </a>
+            <h3>Product 4 - $249</h3>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <a href="https://www.bing.com/aclk?ld=e8jCZMNZlTzKHzYRm3cStL5DVUCUz5mWjzdFHxn8SzrlQJcnH61GKlCsNvH5bnC5_DUAdiGHUFOrUJK0BpxipSRjuxt0gnJ5WTaBsiMzYr06lSdb2hmgOmHt4NZNV1fM7XWFnqdgeOpvxd5kYJ077goC0Pr1vKEbxvtTdIhprHAywnaFXuo-LmppC0l8pVanvbXlYGsw&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmluJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkY292ZXJzJTJibW9iaWxlJTI2aW5kZXglM2RhcHMlMjZ0YWclM2Rtc25kZXNrc3RkaW4tMjElMjZyZWYlM2RwZF9zbF85bnhqM2VrcGlsX2UlMjZhZGdycGlkJTNkMTMyODIxMTY1MTc2MjAxNCUyNmh2YWRpZCUzZDgzMDEzNDk5NDg3MTU0JTI2aHZuZXR3JTNkbyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYmUlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkMTU1OTg1JTI2aHZ0YXJnaWQlM2Rrd2QtODMwMTQxMDQyMDU1NTYlM2Fsb2MtOTAlMjZoeWRhZGNyJTNkMjQ1NzBfMjM2OTM2NyUyNm1jaWQlM2QlMjZtc2Nsa2lkJTNkYTZhMjEyMjFhZjJmMTE3ZTJlZWM3NTRjZGJhZmE0NDU&rlid=a6a21221af2f117e2eec754cdbafa445&ntb=1" target="_blank">
+                <img src="cover.jpeg" alt="Tech Product 5">
+            </a>
+            <h3>Product 5 - $349</h3>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <a href="https://www.bing.com/aclk?ld=e8baYCbv6vWWbUw1t9kC57RTVUCUwl53sEm046B9n-TjQ6hRk_hSBfrRSp7-CGC3ObEa4VGa3zaj7gCJUKaSMttKOoIL1RxhWQNG-b3QVZuqHn-S10FoUv3NSuS6Cq6DDsm5ORSUHQlucBvO9Dj2plQPMuF2eg0vBw6gJyXy7hp1cv6UTObhPOziKsDc4xJixwbGVcLA&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmluJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkbW9iaWxlJTJiY2hhcmdlciUyNmluZGV4JTNkYXBzJTI2dGFnJTNkbXNuZGVza3N0ZGluLTIxJTI2cmVmJTNkcGRfc2xfMnQybzBndW1rel9lJTI2YWRncnBpZCUzZDEzMjkzMTExNjc2NjI3MDMlMjZodmFkaWQlM2Q4MzA4MjIxODg2NDA5NyUyNmh2bmV0dyUzZG8lMjZodnFtdCUzZGUlMjZodmJtdCUzZGJlJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDE1NTk4NSUyNmh2dGFyZ2lkJTNka3dkLTgzMDgyODI4MDYzNzI1JTNhbG9jLTkwJTI2aHlkYWRjciUzZDI2NzU4XzI3OTk5ODElMjZtY2lkJTNkJTI2bXNjbGtpZCUzZDI5ZDJmYjZkZDkwZjFhMDY4YmM1OWMwMGFkOTljOGQy&rlid=29d2fb6dd90f1a068bc59c00ad99c8d2&ntb=1" target="_blank">
+                <img src="charger.jpeg" alt="Tech Product 6">
+            </a>
+            <h3>Product 6 - $499</h3>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
